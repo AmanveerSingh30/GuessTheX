@@ -1,0 +1,309 @@
+
+/*properties for all content inside the body */
+body {
+    background-color:  #0695b9; /*BThe regular background colour */ 
+    color: rgb(0, 0, 0); /*Colour of the text */
+    
+   
+    
+    /*properties for the image themes*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire area */
+}
+
+/*Properties of the title rectangle*/
+#title {
+    width: 800px;
+    height: 100px;
+    display: block;
+    margin: 100px auto auto auto;
+
+    border: 3px solid black;
+    border-radius: 15px;
+   /*//////////////////////////////////////////////////////////////////////////////////////////////////////////position: relative;*/
+   
+    box-shadow: 4px 4px 10px 6px rgb(255, 255, 255); /*Shadow around the box*/
+    -webkit-border-radius: 6px;
+}
+
+/*#gameboard is the box with the main content*/
+#gameboard {
+    width: 900px;
+    height: 400px;
+    display: block;
+    margin: 50px auto auto auto;
+    position: relative;
+    border: 3px solid black;
+    border-radius: 10px;
+   
+   
+    box-shadow: 4px 4px 10px 6px rgb(255, 255, 255); /*Shadow around the box*/
+    -webkit-border-radius: 6px;
+} 
+
+/*******************************/
+/**************Text*************/
+/*******************************/
+
+    /*Main title of screen*/
+    h1 {
+        width: 80%;
+        height: 50%;
+        text-align: center;
+        line-height: 20px;
+
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        padding-top: 3.8%;
+        margin: 10px auto auto auto;
+        background-color: rgb(247, 247, 247);
+        opacity:0.5;
+        border-radius: 10px;
+    }
+
+
+
+    /*Second main title of screen if needed*/
+    h2 {
+        width: 90%;
+        height: 150%; 
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 30px;
+        margin: 10px auto auto auto;
+        background-color: rgb(247, 247, 247);
+        opacity:0.6;
+        border-radius: 10px;
+    }
+
+    /*Labels for the levels_screen*/
+    h3 {
+        width: 15%;
+        height: 10%;
+        text-align: center;
+        padding-top: 30px;
+        margin: 10px auto auto auto;
+        background-color: rgb(247, 247, 247);
+        opacity:0.6;
+        border-radius: 10px;
+    }
+
+    /*Label for the gamepage*/
+    h4 {
+        width: 80%;
+        height: 10%; /*white highlight around the text*/
+        text-align: center;
+        vertical-align: middle;
+    
+        padding-top: 30px;
+        position: absolute;  left: 80px; top: 200px;
+    
+        margin: 10px auto auto auto;
+        background-color: rgb(247, 247, 247);
+    
+    
+        opacity:0.6;
+        border-radius: 10px;
+     
+    }
+    
+    /*properties for the input number on gamepage*/
+    .input{
+        font:inherit;
+        font-size: 30px;
+        color:black;
+        font-weight: 500;
+        
+
+        
+        padding-left: 5px;
+        position: absolute; right: 400px; top: 150px;
+    }
+    
+
+    #easyscore, #mediumscore, #hardscore{width:auto;}
+
+    /*Positions for the labels*/ /*Amanveer*/
+    #easylabel { position: absolute; left: 10px; top: 60px;}
+
+    #mediumlabel { position: absolute; left: 10px; top: 160px;}
+
+    #hardlabel {position: absolute; left: 10px; top: 260px;}
+
+    #easyscore { position: absolute; left: 150px; top: 60px;}
+
+    #mediumscore { position: absolute; left: 150px; top: 160px;}
+
+    #hardscore {position: absolute; left: 150px; top: 260px; }
+
+
+/******************************/
+/**********Buttons*************/
+/******************************/
+
+
+    button {
+    
+        border-radius: 10px;
+        padding: 10px 24px;
+    }
+
+   
+    /*buttons on homepage_screen*/
+        #start{
+            font-size: 25px;
+            cursor: pointer;
+            position: absolute; right: 45%; bottom: 38%;
+        }
+
+        #instructions{
+            font-size: 25px;
+            cursor: pointer;
+            position: absolute; right: 41%; bottom: 20%;
+        }
+
+        #highscores{
+            font-size: 25px;
+            cursor: pointer;
+            position: absolute; right: 10px; bottom: 10px;
+
+        }
+        /*hover*/
+        #start:hover, #highscores:hover, #instructions:hover{  color: whitesmoke;  background-color: black; }
+        
+        /*dropdown menu theme button*/
+        #theme {
+            font-size: 25px;
+        }
+        .dropdown {
+            display: inline-block;
+            position: absolute; left: 10px; bottom: 10px;
+            font-size: 30px; 
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0px 10px 10px 0px rgb(247, 247, 247);
+            font-size: 15px;
+            cursor: pointer;
+            position: absolute; bottom: 40px;
+            background-color: rgb(247, 247, 247);
+            opacity:0.5;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            
+        }
+        .dropdown-content a {
+            display: block;
+            color: #000000;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            color: #FFFFFF;
+            background-color: #00A4BD;
+        }
+        
+    /*buttons on level page screen*/
+    
+
+        #easy{
+            font-size: 35px;
+            cursor: pointer;
+            position: absolute; 
+            right:700px;
+            top: 35px;
+            background-color: rgb(45, 189, 45);
+            font: white;
+            border: none;
+            border-radius: 8px;
+        }
+        #easy:hover {color:#4CAF50; background-color: white; border: solid #4CAF50;}
+        #medium{
+            font-size: 35px;
+            cursor: pointer;
+            position: absolute;
+            right: 360px;
+            top: 35px;
+            background-color: rgb(223, 208, 9);
+            font: black;
+            border: none;
+        }
+        #medium:hover {color:rgb(223, 208, 9); background-color: white; border:solid rgb(223, 208, 9);}
+        #hard{
+            font-size: 35px;
+            cursor:pointer;
+            position: absolute;
+            right: 100px;
+            top: 35px;
+            background-color: rgb(187, 0, 0);
+            font: white;
+            border: none;
+        }
+        #hard:hover {color:rgb(187, 0, 0);; background-color: white; border:solid rgb(187, 0, 0);}
+       
+    
+    /*other buttons*/
+    #homepage {
+        font-size: 15px;
+        cursor: pointer;
+        position: absolute; right: 10px; bottom: 10px;
+    }
+
+
+    #exit {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute; right: 10px; bottom: 10px;
+    }
+
+
+    #enter {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute; right: 250px; top: 140px;
+    }
+
+    #enter:hover, #exit:hover, #homepage:hover {  color: whitesmoke;  background-color: black;}
+
+    .hintsCheckbox{
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute; right: 45%; bottom: 50px;
+
+    }
+
+
+/*img*/
+#easyimg{
+    width: 170px;
+    height: 150px;
+    top:10px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 130px;
+    padding-bottom: 250px;
+
+}
+#mediumimg {
+    width: 170px;
+    height: 150px;
+    padding: 30px;
+    padding-right: 100px;
+    padding-left: 15px;
+    padding-bottom: 250px;
+}
+#hardimg {
+    padding: 30px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 250px;
+    width: 170px;
+    height: 150px;
+    
+}
+

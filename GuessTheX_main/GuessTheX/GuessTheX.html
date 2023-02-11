@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title> Guess The X! </title>
+  <link rel="stylesheet" type="text/css" href="TeamZ.css" title="style" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="TeamZ_ClientSide.js"></script>
+</head>
+<body>
+
+  <!--The first rectangle on the screen containing the title of the page-->
+  <div id="title">
+  
+    <h1>Guess the X!!!</h1>
+  
+  </div>
+  
+  <!--The second rectangle on the screen containing the gameboard-->
+  <div id="gameboard">
+  
+    <h2>  </h2>
+    
+    <img id = 'easyimg'>
+    <img id = 'mediumimg'>
+    <img id = 'hardimg'>
+    
+    
+  
+    
+    
+
+    
+    <!--Buttons on the homepage_screen-->
+    <button id="start" onclick="levels_screen()">Start</button>
+    <button id="instructions" onclick="instructions_screen()">Instructions</button>
+    <button id="highscores" onclick="highscores_screen()">Highscores</button>
+    
+    <div class="dropdown">
+      <button >Theme</button>
+      <div class="dropdown-content">
+      <a onclick="forestpic()">Forest</a>
+      <a onclick="galaxypic()">Galaxy</a>
+      <a onclick="desertpic()">Desert</a>
+      <a onclick="regularpic()">Regular</a>
+      </div>
+    </div>
+  
+    <!--buttons on level_screen-->
+    <button id="easy" onclick="easy_level()">Easy</button>
+    <button id="medium" onclick="medium_level()">Medium</button>
+    <button id="hard" onclick="hard_level()">Hard</button>
+    
+
+    <!--Labels on the highscores_screen-->
+    <h3 id="easylabel">Easy</h3>
+    <h3 id="mediumlabel">Medium</h3>
+    <h3 id="hardlabel">Hard</h3>
+    <h3 id="easyscore"> </h3>
+    <h3 id="mediumscore"></h3>
+    <h3 id="hardscore"></h3>
+
+    <!--input and paragraph for gamepage_screen-->
+    <div class="input">
+      Input Number: <input id="num" type="number" min="0" max="100" /> <!--min and max are edited by js that first determines what the min and max is -->
+    </div>
+
+    <button id="enter" onclick="evaluateNumber()">Enter</button> <!-- create onlick for enter!--------------------------------------------------------------> 
+
+    <h4> </h4>
+
+    <div class = "hintsCheckbox">
+    <input id="hints" type="checkbox" onclick="hintCheck()"/> Hints
+    </div>
+
+    <!--Button on most screens-->
+    <button id="homepage" onclick="homepage_screen()">Homepage</button>
+    <button id="exit" onclick="exitButton()">Exit</button>
+
+  </div>  
+
+  </body>
+</html>
